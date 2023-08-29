@@ -57,6 +57,25 @@ class indice:
     
     def getpotencia_delta (self):
         return self.__potencia_delta
+    def getpotencia_theta(self):
+        return self.__potencia_theta
+    def getpotencia_alfa1(self):
+        return self.__potencia_alfa1
+    def getpotencia_alfa2(self):
+        return self.__potencia_alfa2
+    def getpotencia_beta(self):
+        return self.__potencia_beta
+    def getpotencia_gamma (self):
+        return self.__potencia_gamma
+    
+    def setpotencia_delta(self,delta):
+        self.__potencia_delta = delta
+    def setpotencia_theta(self,theta):
+        self.__potencia_theta = theta
+    def setpotencia_alfa1(self,alfa1):
+        self.__potencia_alfa1 = alfa1
+    
+    
     
 
 
