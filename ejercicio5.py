@@ -1,4 +1,6 @@
 import datetime
+# import mysql.connector
+# import mongo
 
 
 class pacientes:
@@ -74,8 +76,28 @@ class indice:
         self.__potencia_theta = theta
     def setpotencia_alfa1(self,alfa1):
         self.__potencia_alfa1 = alfa1
+    def setpotencia_beta(self,beta):
+        self.__potencia_beta = beta
+    def setpotencia_gamma(self,gamma):
+        self.__potencia_gamma = gamma
+
+class sistema:
+    def __init__(self):
+        self.__dicpacientes = {}
+
+    def verificarsiexiste (self,nombre):
+        if nombre in self.__dicpacientes:
+            print("El paciente ya existe")
+            return True
+
+    # def ingresarpaciente (self,name,cc,gender,list):
+    #     name = 
+
+    def deletepaciente (self,cc):
+        if cc in self.__dicpacientes:
+            return True
     
-    
-    
+    #def guardar (self,paciente):
+        
 
 
